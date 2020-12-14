@@ -62,3 +62,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   syncMode: 0
   syncInterval: 0.1
+  allCharacters:
+  - {fileID: 4839461178103214779, guid: 4253af6c20f055f469c18b09e939221c, type: 3}
+  - {fileID: 5739773718966647975, guid: d3e2c2fdf1352d046848eb3be3888ad8, type: 3}
+  - {fileID: 2054852099017887634, guid: 1dec2106bbe880b429546de6ba08b1a1, type: 3}
+  - {fileID: 2123150924490874246, guid: f98fd977839fdfa48ab879a124c66e8e, type: 3}
+  - {fileID: 5068829031669625481, guid: 48b1f11bdfe0f614f9df797d67fe39b8, type: 3}
+  - {fileID: 4265209120268280713, guid: 0a7892b1f16174547a2b785a62bcaba3, type: 3}
+  - {fileID: 6455959218052350317, guid: cf85ea13dda3a3d428026246552f02b3, type: 3}
+  - {fileID: 2430399550033151021, guid: 69bf7845003c9ed44b136c594ff461d6, type: 3}
+  - {fileID: 6360419884371569669, guid: 9e74f3ff746f54c4f923d8c3bd624b36, type: 3}
+  - {fileID: 607809237995140190, guid: 3fa1463598a7d914aa53ccd91d8bfd01, type: 3}
+  - {fileID: 1784742666713330834, guid: b1fb962577100fa4c937e8b2408d6620, type: 3}
+  - {fileID: 2329954462949587615, guid: f07206c2a56982a49b8c264ee919888a, type: 3}

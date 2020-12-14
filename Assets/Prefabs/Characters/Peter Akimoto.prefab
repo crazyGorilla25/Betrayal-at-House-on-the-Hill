@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8683455911121541137}
   - component: {fileID: 6360419884371569669}
   - component: {fileID: 1174261540357892175}
+  - component: {fileID: 4653933524638934155}
   m_Layer: 0
   m_Name: Peter Akimoto
   m_TagString: Untagged
@@ -44,6 +45,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e973a70fe2deea46ad03c9a2ee51108, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  id: 1
   characterName: Peter Akimoto
   mightArray: 0200000003000000030000000400000005000000050000000600000008000000
   speedArray: 0300000003000000030000000400000006000000060000000700000007000000
@@ -104,3 +106,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &4653933524638934155
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6688729608867913198}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b91ecbcc199f4492b9a91e820070131, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneId: 0
+  serverOnly: 0
+  m_AssetId: 
+  hasSpawned: 0

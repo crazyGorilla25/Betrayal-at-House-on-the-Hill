@@ -11,8 +11,9 @@ GameObject:
   - component: {fileID: 8026207017859745971}
   - component: {fileID: 5739773718966647975}
   - component: {fileID: 551925428395325677}
+  - component: {fileID: -7128452321675330280}
   m_Layer: 0
-  m_Name: Darrin _Flash_ Williams
+  m_Name: Darrin Flash Williams
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -44,6 +45,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e973a70fe2deea46ad03c9a2ee51108, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  id: 2
   characterName: Darrin "Flash" Williams
   mightArray: 0200000003000000030000000400000005000000060000000600000007000000
   speedArray: 0400000004000000040000000500000006000000070000000700000008000000
@@ -104,3 +106,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &-7128452321675330280
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5417867472916761932}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b91ecbcc199f4492b9a91e820070131, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneId: 0
+  serverOnly: 0
+  m_AssetId: 
+  hasSpawned: 0

@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &1734916181788507769
+--- !u!1 &6705799096014385286
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,24 +8,24 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4341848357217205126}
-  - component: {fileID: 2054852099017887634}
-  - component: {fileID: 6092065798431329240}
-  - component: {fileID: -5822337033637846871}
+  - component: {fileID: 8745209545519625593}
+  - component: {fileID: 6455959218052350317}
+  - component: {fileID: 1267548056850023719}
+  - component: {fileID: -1948081955739473569}
   m_Layer: 0
-  m_Name: Father Rhinehardrt
+  m_Name: Missy Dubourde
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4341848357217205126
+--- !u!4 &8745209545519625593
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1734916181788507769}
+  m_GameObject: {fileID: 6705799096014385286}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -33,35 +33,35 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2054852099017887634
+--- !u!114 &6455959218052350317
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1734916181788507769}
+  m_GameObject: {fileID: 6705799096014385286}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9e973a70fe2deea46ad03c9a2ee51108, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  id: 4
-  characterName: Father Rhinehardrt
-  mightArray: 0100000002000000020000000400000004000000050000000500000007000000
-  speedArray: 0200000003000000030000000400000005000000060000000700000007000000
-  knowledgeArray: 0300000004000000050000000500000006000000070000000700000008000000
-  sanityArray: 0100000003000000030000000400000005000000060000000600000008000000
+  id: 10
+  characterName: Missy Dubourde
+  mightArray: 0200000003000000030000000300000004000000050000000600000007000000
+  speedArray: 0300000004000000050000000600000006000000060000000700000007000000
+  knowledgeArray: 0200000003000000040000000400000005000000060000000600000006000000
+  sanityArray: 0100000002000000030000000400000005000000050000000600000007000000
   birthday:
-    day: 29
-    month: 5
-  age: 62
---- !u!212 &6092065798431329240
+    day: 14
+    month: 2
+  age: 9
+--- !u!212 &1267548056850023719
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1734916181788507769}
+  m_GameObject: {fileID: 6705799096014385286}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -95,7 +95,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 34bfd123724e64c4891a70673eb49623, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 50fedcc98e68cdf408a1f4af43cfb445, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -106,13 +106,13 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &-5822337033637846871
+--- !u!114 &-1948081955739473569
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1734916181788507769}
+  m_GameObject: {fileID: 6705799096014385286}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9b91ecbcc199f4492b9a91e820070131, type: 3}

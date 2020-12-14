@@ -18,4 +18,9 @@ public class Character : MonoBehaviour
 	{
         return id;
 	}
+
+    public string GetName()
+	{
+        return characterName;
+	}
 }

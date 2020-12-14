@@ -1738,7 +1738,7 @@ GameObject:
   - component: {fileID: 1927533810}
   - component: {fileID: 1927533809}
   m_Layer: 0
-  m_Name: Netowrk Manager
+  m_Name: Network Manager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1816,7 +1816,19 @@ MonoBehaviour:
   playerPrefab: {fileID: 8432771862294377488, guid: 8666a5870271e9d4398fbb6110224d8f, type: 3}
   autoCreatePlayer: 1
   playerSpawnMethod: 0
-  spawnPrefabs: []
+  spawnPrefabs:
+  - {fileID: 5169811617895629648, guid: 4253af6c20f055f469c18b09e939221c, type: 3}
+  - {fileID: 5417867472916761932, guid: d3e2c2fdf1352d046848eb3be3888ad8, type: 3}
+  - {fileID: 1734916181788507769, guid: 1dec2106bbe880b429546de6ba08b1a1, type: 3}
+  - {fileID: 1864796527561272429, guid: f98fd977839fdfa48ab879a124c66e8e, type: 3}
+  - {fileID: 4814344898992079714, guid: 48b1f11bdfe0f614f9df797d67fe39b8, type: 3}
+  - {fileID: 4586622733871288930, guid: 0a7892b1f16174547a2b785a62bcaba3, type: 3}
+  - {fileID: 6705799096014385286, guid: cf85ea13dda3a3d428026246552f02b3, type: 3}
+  - {fileID: 2678911187311605190, guid: 69bf7845003c9ed44b136c594ff461d6, type: 3}
+  - {fileID: 6688729608867913198, guid: 9e74f3ff746f54c4f923d8c3bd624b36, type: 3}
+  - {fileID: 934702821274502581, guid: 3fa1463598a7d914aa53ccd91d8bfd01, type: 3}
+  - {fileID: 2041056369550263673, guid: b1fb962577100fa4c937e8b2408d6620, type: 3}
+  - {fileID: 2648764428719999860, guid: f07206c2a56982a49b8c264ee919888a, type: 3}
 --- !u!4 &1927533811
 Transform:
   m_ObjectHideFlags: 0
@@ -1909,7 +1921,7 @@ MonoBehaviour:
   m_CaretColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
   m_CustomCaretColor: 0
   m_SelectionColor: {r: 0.65882355, g: 0.80784315, b: 1, a: 0.7529412}
-  m_Text: 
+  m_Text: localhost
   m_CaretBlinkRate: 0.85
   m_CaretWidth: 1
   m_ReadOnly: 0
