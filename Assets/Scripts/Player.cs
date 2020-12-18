@@ -107,6 +107,11 @@ public class Player : NetworkBehaviour
 		}
 	}
 	[Server]
+	public void SetIsPartyOwner(bool partyOwner)
+	{
+		isPartyOwner = partyOwner;
+	} 
+	[Server]
 	public void SetCharacterId(int characterId)
 	{
 		myCharacterId = characterId;
@@ -134,6 +139,15 @@ public class Player : NetworkBehaviour
 		if (characterId < 0 || characterId > 11) return;
 
 		SetCharacterId(characterId);
-	} 
+	}
+
+	[Command]
+	public void CmdStartGame()
+	{
+		if (!isPartyOwner) return;
+
+		((BetrayalNetworkManager)NetworkManager.singleton).StartGame();
+	}
+
 	#endregion
 }

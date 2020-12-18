@@ -58,4 +58,9 @@ public class MainMenu : MonoBehaviour
 
 		NetworkManager.singleton.StartHost();
 	}
+
+	public void CloseApplication()
+	{
+		Application.Quit();
+	}
 }

@@ -12,12 +12,14 @@ public class LobbyManager : MonoBehaviour
 	[SerializeField] Image[] playerCharacterIcons = new Image[6];
 	[SerializeField] GameObject[] infoBackgrounds = new GameObject[6];
 	[SerializeField] GameObject[] infoObjects = new GameObject[6];
+	[SerializeField] Button startButton = null;
 
 	private void OnEnable()
 	{
 		Player.ClientOnDisplayNameUpdated += ClientHandleDisplayNameUpdated;
 		Player.ClientOnCharacterIdUpdated += ClientHandleCharacterIdUpdated;
 		Player.ClientOnStartPlayer += ClientHandleStart;
+		Player.AuthorityOnPartyOwnerStateUpdated += AuthorityHandlePartyOwnerUpdated;
 	}
 
 	private void OnDisable()
@@ -25,6 +27,7 @@ public class LobbyManager : MonoBehaviour
 		Player.ClientOnDisplayNameUpdated -= ClientHandleDisplayNameUpdated;
 		Player.ClientOnCharacterIdUpdated -= ClientHandleCharacterIdUpdated;
 		Player.ClientOnStartPlayer -= ClientHandleStart;
+		Player.AuthorityOnPartyOwnerStateUpdated -= AuthorityHandlePartyOwnerUpdated;
 	}
 
 	void ClientHandleStart()
@@ -42,15 +45,24 @@ public class LobbyManager : MonoBehaviour
 			}
 		}
 	}
+	void AuthorityHandlePartyOwnerUpdated(bool state)
+	{
+		startButton.gameObject.SetActive(state);
+	}
+	public void StartGame()
+	{
+		NetworkClient.connection.identity.GetComponent<Player>().CmdStartGame();
+	}
+
 	void ClientHandleCharacterIdUpdated()
 	{
 		List<Player> players = ((BetrayalNetworkManager)NetworkManager.singleton).players;
 
+		bool characterTaken = false;
+
 		for (int i = 0; i < players.Count; i++)
 		{
 			int playerCharacterId = players[i].GetCharacterId();
-
-			bool characterTaken = false;
 
 			for (int j = 0; j < players.Count; j++)
 			{
@@ -71,6 +83,8 @@ public class LobbyManager : MonoBehaviour
 			}
 
 			playerCharacterIcons[i].color = characterTaken ? new Color(.5f, .5f, .5f) : new Color(1, 1, 1);
+
+			startButton.interactable = players.Count >= 3 && !characterTaken;
 		}
 	}
 

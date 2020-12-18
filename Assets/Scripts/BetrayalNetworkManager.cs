@@ -10,6 +10,8 @@ public class BetrayalNetworkManager : NetworkManager
 
 	public static event Action<int> ClientOnConnect;
 
+	bool isGameInProgress = false;
+
 	public override void OnServerAddPlayer(NetworkConnection conn)
 	{
 		base.OnServerAddPlayer(conn);
@@ -19,6 +21,8 @@ public class BetrayalNetworkManager : NetworkManager
 		players.Add(player);
 
 		player.SetCharacterId(1);
+
+		player.SetIsPartyOwner(numPlayers == 1);
 
 		player.SetDisplayName($"Player {numPlayers}");
 	}
@@ -38,4 +42,13 @@ public class BetrayalNetworkManager : NetworkManager
 
 		ClientOnConnect?.Invoke(numPlayers);
 	}
+	public void StartGame()
+	{
+		if (players.Count < 3) return;
+
+		isGameInProgress = true;
+
+		ServerChangeScene("Game");
+	}
+
 }
