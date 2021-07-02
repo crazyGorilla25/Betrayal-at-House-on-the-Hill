@@ -9,7 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3322624292343597935}
-  - component: {fileID: 6284787322754819462}
   - component: {fileID: 4674317170338873881}
   m_Layer: 0
   m_Name: Player
@@ -32,22 +31,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6284787322754819462
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8432771862294377488}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9b91ecbcc199f4492b9a91e820070131, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sceneId: 0
-  serverOnly: 0
-  m_AssetId: 
-  hasSpawned: 0
 --- !u!114 &4674317170338873881
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -60,8 +43,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98f0177dde03ef04aa193f3b38e57129, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  syncMode: 0
-  syncInterval: 0.1
   allCharacters:
   - {fileID: 4839461178103214779, guid: 4253af6c20f055f469c18b09e939221c, type: 3}
   - {fileID: 5739773718966647975, guid: d3e2c2fdf1352d046848eb3be3888ad8, type: 3}
@@ -75,3 +56,4 @@ MonoBehaviour:
   - {fileID: 607809237995140190, guid: 3fa1463598a7d914aa53ccd91d8bfd01, type: 3}
   - {fileID: 1784742666713330834, guid: b1fb962577100fa4c937e8b2408d6620, type: 3}
   - {fileID: 2329954462949587615, guid: f07206c2a56982a49b8c264ee919888a, type: 3}
+  myCharacterId: 0
